@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "type": "photo",
+    "filename": "monument-old.jpg",
+    "title": "Washington then",
+    "caption": "The Tidal Basin has been an iconic spot for viewing cherry blossoms since the trees were first planted in 1912. In this photo (estimated to be captured between 1920 and 1950 from the Library of Congress), you can see the Washington Monument in the background, but the trees are much smaller than they are today.",
+    "date": "1945",
+    "credit": "Theodor Horydczak / Library of Congress"
+  },
+  {
+    "id": 2,
+    "type": "photo",
+    "filename": "monument-new.jpg",
+    "title": "Growing up",
+    "caption": "Many of the views are similar, if not identical, to the historical photographs. One of the most significant changes to the the Tidal Basin has been various rounds of construction to reinforce the banks and protect the trees from flooding, as well as additions to historical monuments and memorials.",
+    "date": "March 2025",
+    "credit": "Ashley Mowreader"
+  },
+
+  {
+    "id": 3,
+    "type": "text",
+    "body": "While D.C. has some of the most iconic destinations for cherry blossom blooms, there are other parks across the U.S. that have more trees, including Georgia's Macon-Bibb County, which has more than 300,000 cherry blossom trees and hosts the annual International Cherry Blossom Festival. In New York City, the Brooklyn Botanic Garden has a Cherry Esplanade with over 200 cherry trees, and Central Park has Kwanzan and Yoshino cherry blossom trees. One of my favorite cherry blossom destinations is the University of Washington in Seattle, which has over 30 varieties of cherry trees and hosts the annual UW Cherry Blossom Festival."
+  },
+  {
+    "id": 4,
+    "type": "photo",
+    "filename": "branch-old.jpg",
+    "title": "In bloom",
+    "caption": "The cherry blossom trees around the tidal basin are the Yoshino cherry variety, which bloom for about two weeks each spring. In 1912, Mayor Yukio Ozaki of Tokyo gifted 3,000 cherry blossom trees to the United States as a symbol of friendship between the two countries.",
+    "date": "1945",
+    "credit": "Theodor Horydczak / Library of Congress"
+  },
+
+  {
+    "id": 5,
+    "type": "photo",
+    "filename": "branch-new.jpg",
+    "title": "In bloom",
+    "caption": "Each spring, the National Park Service announces the 'peak bloom' date, which is when 70 percent of the Yoshino cherry blossoms are open. The exact date varies each year based on weather conditions, but typically falls between late March and early April. This photo was captured during peak bloom in 2025, which was on March 28. The earliest recorded peak bloom date was March 15 in 1990, and the latest was April 18 in 1958.",
+    "date": "March 2025",
+    "credit": "Ashley Mowreader"
+  },
+    {
+    "id": 6,
+    "type": "photo",
+    "filename": "family-old.jpg",
+    "title": "Family outing",
+    "caption": "Visitors flock to the Tidal Basin each spring to see the cherry blossoms, one of the most popular attractions in D.C.",
+    "date": "1945",
+    "credit": "Theodor Horydczak / Library of Congress"
+  },
+    {
+    "id": 7,
+    "type": "photo",
+    "filename": "ashley.JPG",
+    "title": "Early morning",
+    "caption": "To escape the crowds, locals (like myself) wake up early before sunrise to see the cherry blossoms in the best light and without too many tourists. In 2024, an estimated 1.6 million people attended the National Cherry Blossom Festival, which includes events like the Blossom Kite Festival, the Blossom Parade and the Sakura Matsuri Japanese Street Festival." ,
+    "date": "March 2024",
+    "credit": "Ashley Mowreader"
+  },
+
+    {
+    "id": 8,
+    "type": "photo",
+    "filename": "jefferson-old.jpg",
+    "title": "Monumental view",
+    "caption": "The Tidal Basin has views of several memorials, including the Washington Monument, the Jefferson Memorial and, in the past, the Lincoln Memorial (which was under construction in 1945).",
+    "date": "1945",
+    "credit": "Theodor Horydczak / Library of Congress"
+  },
+  {
+    "id": 9,
+    "type": "photo",
+    "filename": "jefferson-new.JPG",
+    "title": "New Sights to See",
+    "caption": "Now, you can see the Martin Luther King Jr. Memorial and the Franklin Delano Roosevelt Memorial from the Tidal Basin, in addition to the Washington Monument and Jefferson Memorial. You can't see Lincoln Memorial from the Tidal Basin anymore because of the trees, but you can see it from other parts of the National Mall.",
+    "date": "March 2025",
+    "credit": "Ashley Mowreader"
+  },
+
+  {
+    "id": 10,
+    "type": "text",
+    "body": "But while many parts of the Tidal Basin have remained unchanged, the cherry blossom trees themselves have not. In fact, the first iteration of cherry blossoms which arrived in 1910 were riddled with pests and bacteria. President Taft authorized USDA inspectors to burn 2,000 trees, which were replaced by the 3,020 healthy trees sent by Japan in March 1912. These trees were the foundation for today's basin blossoms. Like many social events in D.C., the incident created new policies, including the establishment of new plant quarantine laws and the Federal Horticultural Board. " 
+   
+  },
+
+  {"id": 11,
+    "type": "photo",
+    "filename": "stumpy.JPG",
+    "title": "Beauty in imperfection",
+    "caption":  "Some trees have also been cut down to make space for construction projects, including this ugly little tree affectionately called 'Stumpy.' Stumpy was removed in 2025 to allow for reinforcement of the Tidal Basin walls, but lives on as a mascot for the National Cherry Blossom Festival.",
+    "date": "March 2025",
+    "credit": "Ashley Mowreader"
+  }
+]

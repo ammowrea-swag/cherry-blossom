@@ -48,7 +48,7 @@ USAGE EXAMPLE:
   .slide {
     height: 100%;
     flex: 0 0 100%;
-    background: black;
+     background: black;
     display: flex;
     flex-direction: column;
   }
@@ -57,12 +57,8 @@ USAGE EXAMPLE:
     display: flex;
     justify-content: center;
     padding: var(--spacing-xs) var(--spacing-sm);
-    background: linear-gradient(
-      90deg,
-      var(--color-cuny-blue-dark) 0%,
-      var(--color-accent) 50%,
-      var(--color-cuny-blue-light) 100%
-    );
+    background: 
+      var(--color-blossom-dark, #c2185b);
     background-size: 200% 100%;
     animation: gradient-sweep 6s ease-in-out infinite;
   }
@@ -142,11 +138,24 @@ USAGE EXAMPLE:
     text-align: center;
   }
 
-  h1 {
+   h1 {
     font-size: 2rem;
     line-height: 1.2;
     margin: 0 0 1rem;
-    color: white;
+
+    /* fallback */
+    color: var(--color-blossom-light, #fce4ec);
+
+    /* gradient text */
+    background: linear-gradient(
+      90deg,
+      var(--color-blossom-light, #fce4ec) 0%,
+      var(--color-blossom-medium, #f48fb1) 45%,
+      var(--color-blossom-accent, #ec407a) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @container (min-width: 768px) {
       font-size: 3.5rem;

@@ -802,3 +802,62 @@ All variables and mixins are exported from the barrel file
 ```scss
 @use '$lib/styles' as *;
 ```
+
+// Add this table after the CUNY Blue Gradient Colors section:
+
+### Cherry Blossom Theme Colors
+
+<table style={{width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-sans)'}}>
+  <thead>
+    <tr style={{borderBottom: '2px solid var(--color-border)', textAlign: 'left'}}>
+      <th style={{padding: '0.5rem 1rem', width: '60px'}}>Swatch</th>
+      <th style={{padding: '0.5rem 1rem'}}>Token</th>
+      <th style={{padding: '0.5rem 1rem'}}>Value</th>
+      <th style={{padding: '0.5rem 1rem'}}>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{borderBottom: '1px solid var(--color-border)'}}>
+      <td style={{padding: '0.75rem 1rem'}}><div style={{width: '40px', height: '40px', background: 'var(--color-blossom-light)', borderRadius: 'var(--border-radius-sm)', border: '1px solid var(--color-border)'}}></div></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>--color-blossom-light</code></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>#fce4ec</code></td>
+      <td style={{padding: '0.75rem 1rem'}}>Soft background tints, slide backgrounds</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--color-border)'}}>
+      <td style={{padding: '0.75rem 1rem'}}><div style={{width: '40px', height: '40px', background: 'var(--color-blossom-medium)', borderRadius: 'var(--border-radius-sm)', border: '1px solid var(--color-border)'}}></div></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>--color-blossom-medium</code></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>#f48fb1</code></td>
+      <td style={{padding: '0.75rem 1rem'}}>Accent borders, dividers, theme accents</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--color-border)'}}>
+      <td style={{padding: '0.75rem 1rem'}}><div style={{width: '40px', height: '40px', background: 'var(--color-blossom-dark)', borderRadius: 'var(--border-radius-sm)', border: '1px solid var(--color-border)'}}></div></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>--color-blossom-dark</code></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>#c2185b</code></td>
+      <td style={{padding: '0.75rem 1rem'}}>Deep accents, hover states</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--color-border)'}}>
+      <td style={{padding: '0.75rem 1rem'}}><div style={{width: '40px', height: '40px', background: 'var(--color-blossom-accent)', borderRadius: 'var(--border-radius-sm)', border: '1px solid var(--color-border)'}}></div></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>--color-blossom-accent</code></td>
+      <td style={{padding: '0.75rem 1rem'}}><code>#ec407a</code></td>
+      <td style={{padding: '0.75rem 1rem'}}>Primary interactive elements, bloom animations</td>
+    </tr>
+  </tbody>
+</table>
+
+// Add this section at the end before SCSS Variables:
+
+## Animations
+
+Defined in `src/lib/styles/_animations.scss` — import with `@use '$lib/styles/_animations.scss'`.
+
+| Animation | Duration | Usage |
+|-----------|----------|-------|
+| `bloom-fade-in` | 0.6s | Smooth scale-and-fade entrance for slide content |
+| `petal-float` | 3s | Gentle floating motion, subtle and continuous |
+| `bloom-pulse` | 2s | Expanding box-shadow pulse for emphasis |
+
+**CSS Classes:**
+
+- `.bloom-animation` — applies `bloom-fade-in` fade-in effect
+- `.petal-float` — applies continuous floating animation
+- `.bloom-pulse` — applies expanding shadow pulse

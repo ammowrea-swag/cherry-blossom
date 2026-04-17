@@ -57,6 +57,12 @@ USAGE EXAMPLE:
       goPrev();
     }
   }
+function goToSlide(index) {
+  if (index >= 0 && index < totalSlides) {
+    currentSlide = index;
+  }
+}
+  
 </script>
 
 <div class="gallery-wrapper">
@@ -79,18 +85,22 @@ USAGE EXAMPLE:
       <span class="arrow-hint">›</span>
     </button>
 
-    {#if totalSlides > 1}
-      <div class="dots" aria-label="Slide indicators">
-        {#each Array.from({ length: totalSlides }, (_, i) => i) as i (i)}
-          <span
-            class="dot"
-            class:active={i === currentSlide}
-            aria-label="Slide {i + 1}"
-            aria-current={i === currentSlide ? 'true' : undefined}
-          ></span>
-        {/each}
-      </div>
-    {/if}
+   {#if totalSlides > 1}
+  <div class="dots" aria-label="Slide indicators">
+    {#each Array.from({ length: totalSlides }, (_, i) => i) as i (i)}
+      <button
+        type="button"
+        class="dot"
+        class:active={i === currentSlide}
+        aria-label={`Go to slide ${i + 1}`}
+        aria-current={i === currentSlide ? 'true' : undefined}
+        onclick={() => goToSlide(i)}
+      >
+        <img src="/favicon.png" alt="" aria-hidden="true" />
+      </button>
+    {/each}
+  </div>
+{/if}
   </div>
 </div>
 
@@ -126,8 +136,9 @@ USAGE EXAMPLE:
     position: absolute;
     top: 0;
     bottom: 0;
-    background: none;
+    background: transparent;
     border: none;
+    appearance: none;
     cursor: pointer;
     z-index: 5;
     -webkit-tap-highlight-color: transparent;
@@ -152,10 +163,10 @@ USAGE EXAMPLE:
   .arrow-hint {
     display: none;
     font-size: 2rem;
-    color: white;
+    color: var(--color-blossom-medium, #f48fb1);
     opacity: 0;
     transition: opacity 0.2s ease;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
     pointer-events: none;
     user-select: none;
 
@@ -164,14 +175,15 @@ USAGE EXAMPLE:
     }
   }
 
-  .tap-zone:focus-visible {
-    outline: 2px solid var(--color-white);
-    outline-offset: -2px;
-  }
-
   .tap-zone:hover .arrow-hint,
   .tap-zone:focus-visible .arrow-hint {
-    opacity: 0.7;
+    opacity: 0.9;
+    color: var(--color-blossom-accent, #ec407a);
+  }
+
+  .tap-zone:focus-visible {
+    outline: 2px solid var(--color-blossom-medium, #f48fb1);
+    outline-offset: -2px;
   }
 
   .dots {
@@ -185,17 +197,29 @@ USAGE EXAMPLE:
     z-index: 5;
   }
 
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-    opacity: 0.4;
-    transition: opacity 0.2s ease;
+   .dot {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    appearance: none;
+    padding: 0;
+    opacity: 0.45;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
 
   .dot.active {
     opacity: 1;
-    background: var(--color-accent);
+    transform: scale(1.12);
   }
 </style>

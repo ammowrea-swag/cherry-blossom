@@ -42,7 +42,7 @@ USAGE EXAMPLE:
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     line-height: 1.2;
     margin: 0 0 1rem;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ USAGE EXAMPLE:
   }
 
   p {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
     line-height: 1.7;
     opacity: 0.8;
     margin: 0;
