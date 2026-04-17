@@ -20,6 +20,8 @@ USAGE EXAMPLE:
 </SlideGallery>
 -->
 <script>
+  import { base } from '$app/paths';
+
   let { children } = $props();
 
   let currentSlide = $state(0);
@@ -96,7 +98,7 @@ function goToSlide(index) {
         aria-current={i === currentSlide ? 'true' : undefined}
         onclick={() => goToSlide(i)}
       >
-        <img src="/favicon.png" alt="" aria-hidden="true" />
+        <img src={`${base}/favicon.png`} alt="" aria-hidden="true" />
       </button>
     {/each}
   </div>

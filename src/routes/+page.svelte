@@ -6,7 +6,7 @@
   import CreditsSlide from '$lib/components/MultimediaGallery/CreditsSlide.svelte';
 
 
-  let { data } = $props();
+  let { data, } = $props();
 </script>
 
 <SlideGallery>
@@ -25,8 +25,8 @@
     <CreditsSlide>
     <h2>About These Photographs</h2>
     <p>
-      Photos included in this gallery are courtesy of the Library of Congress, free for personal and commercial use. High-resolution scans are available in the
-      <a href="https://www.loc.gov/pictures/search/?q=gordon+parks+harlem&co=fsa" target="_blank">
+      Photos taken by Ashley Mowreader. Historic photos included in this gallery are courtesy of the Library of Congress, free for personal and commercial use. High-resolution scans are available in the
+      <a href="https://www.loc.gov/pictures/" target="_blank">
         Prints &amp; Photographs Division</a>'s digital collection.
     </p>
   </CreditsSlide>
